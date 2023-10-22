@@ -11,7 +11,7 @@ class Handler implements URLHandler {
         if (url.getPath().equals("/")) {
             return str;
         } else {
-            if (url.getPath().contains("/add")) {
+            if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
                     num++;
