@@ -5,7 +5,7 @@ class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     int num = 0;
-    String str="bigjon";
+    String str = "";
 
     public String handleRequest(URI url) {
         if (url.getPath().equals("/")) {
@@ -15,7 +15,7 @@ class Handler implements URLHandler {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
                     num++;
-                    str += Integer.toString(num) + ". " + String.format(parameters[1]) + "\n";
+                    str = Integer.toString(num) + ". " + String.format(parameters[1]) + "\n";
                     return str;
                 }
             }
