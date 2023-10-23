@@ -6,7 +6,7 @@
 * The only relevant argument to this method is `URI url`.
 * The relevant fields are the string `str`, the integer `num`, and the other string `s`. 
 * Value of `str`:
-1. Hello
+1) Hello
 * Value of `num`: 1
 * Value of `s`: Hello
 
@@ -15,8 +15,8 @@
 * The only relevant argument to this method is `URI url`.
 * The relevant fields are the string `str`, the integer `num`, and the other string `s`. 
 * Value of `str`: 
-1. Hello
-2. How are you
+1) Hello
+2) How are you
 * Value of `num`: 2
 * Value of `s`: How are you
 
